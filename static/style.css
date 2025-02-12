@@ -1,0 +1,23 @@
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main.container {
+    min-height: calc(100vh - 150px);
+}
+
+footer.footer {
+    max-height: 150px;
+}
+
+#search_result {
+    justify-content: center;
+}
+#search_result .card {
+    width: 30% !important;
+    margin: 11px 11px;
+}

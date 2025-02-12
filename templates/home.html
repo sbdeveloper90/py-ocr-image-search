@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App | Screenshot OCR Search</title>
+
+    <link rel="shortcut icon" href="/static/flask-icon.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="/static/bulma.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container is-widescreen">
+
+        <div class="container mt-6">
+            <h1 class="title has-text-centered mt-2 has-text-primary">Screenshot OCR Search</h1>
+            <h2 class="subtitle has-text-centered mt-2 has-text-primary">Cerca stringhe di testo all'interno della libreria di screenshot</h2>
+        </div>
+        
+        <div class="container mt-6">
+            <form id="form_search">
+                <div class="field">
+                    <label class="label">Testo da Cercare</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Cerca..." id="textInput">
+                    </div>
+                    <p class="help">Inserisci la stringa di testo da ricercare nelle immagini.</p>
+                </div>
+                <div class="control">
+                    <button class="button is-primary" id="searchButton">Cerca</button>
+                    <button class="button is-secondary" id="clearButton">Pulisci</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="container mt-4">
+            <div id="search_info"></div>
+        </div>
+
+        <div class="container mt-4">
+            <div id="search_result" class="is-flex is-flex-wrap-wrap"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+                The source code is licensed <a href="https://opensource.org/license/mit">MIT</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
