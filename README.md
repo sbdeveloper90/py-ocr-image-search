@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```shell
 python extract_text.py
 ```
-><br>Lo script elaborerà tutte le immagini nella cartella `screenshot` e genererà un database `images.db` contenente una tabella con il testo etrapolato dalle singole immagini<br><br>
+><br>Lo script elaborerà tutte le immagini nella cartella `screenshot` e genererà un database `images.db` contenente una tabella con il testo estrapolato dalle singole immagini<br><br>
 ### 3. Avviare l'app
 - Eseguire lo script python `app.py` con il comando:
 ```shell
